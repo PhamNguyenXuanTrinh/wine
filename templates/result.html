@@ -57,7 +57,7 @@
       {% elif prediction >= 5 and prediction <= 7 %}
       <h1 class="poor-quality" style="font-size: 50px">{{prediction}}</h1>
       <h1 class="average-quality" style="font-size: 50px">Average Quality</h1>
-      {% else %}
+      {% elif prediction > 7 %}
       <h1 class="poor-quality" style="font-size: 50px">{{prediction}}</h1>
       <h1 class="high-quality" style="font-size: 50px">High Quality</h1>
       {% endif %}
